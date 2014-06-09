@@ -1,0 +1,17 @@
+#success_label{
+	text-align: center;
+	margin-top: 50%;
+}
+
+#apt_title{
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+#btn_submit{
+	width: 100px;
+}
+
+input{
+	font-size: 40px;
+}

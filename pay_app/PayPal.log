@@ -1,0 +1,714 @@
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic Og==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic Og==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=4&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=4&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015PrhYT6qFG2yNzffsNdjBP8qlLezAW5mgTMnVmbZduVE
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140622906132669
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-5MK997101D103421XKPIVUQI","create_time":"2014-07-24T19:10:57Z","update_time":"2014-07-24T19:10:58Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5MK997101D103421XKPIVUQI","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-5BV9658832772403L","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5MK997101D103421XKPIVUQI/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=5&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=5&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015JKUXTVUPa8qq724WoIjyCVoJrTPRmpaN0wvwJe9dkfg
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 244014062291646579
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-9UK739747J863690CKPIVVKI","create_time":"2014-07-24T19:12:41Z","update_time":"2014-07-24T19:12:41Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-4GB69719VJ288672F","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015dzTYpwqtiPthLTms9FtNIvlHG2UPfywUhSy-zzt1br8
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015dGkcrIzjYweF14caochAEnxVqUmnufVk-P92omyEEYo
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015FPKigHnJpvYf1T3i3I5C-cgbCnvBKNs1V4Rk9s8HsRE
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015rs2TFHJm0-KpJeVv7R-Q-ZSvtOBY3z6RBhquP3CxMU0
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015hDGJQWOA.F0kdCa825iphg-LmNemXn3ZeY4lWoT7KWE
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9UK739747J863690CKPIVVKI
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0158mrvWiDKNARswXi.JZr2IjBwFDjU705qKNlLS6A--UQ
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=6&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=6&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0158Z6Nkj-p-hufHjho0nHS.YGqY-aFTH1S61OIQ4R7AO4
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140631484247669
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2RV09892LL805104PKPJKSVQ","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:00:39Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-89H96653CH069000M","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015IC4rcVXm8PcwdbyZNeB.lRRtJQ-I8O0U1LxA-OvZX1I
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2RV09892LL805104PKPJKSVQ","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:00:39Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-89H96653CH069000M","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015fzkOVJ1kZFOQpdSv2vb0X8S18OYwAHsXMCGhtTrYQ9A
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140631490129665
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2RV09892LL805104PKPJKSVQ","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:01:37Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"3EG588378T878743P","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:01:37Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-2RV09892LL805104PKPJKSVQ","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/3EG588378T878743P","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/3EG588378T878743P/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015cP83Eo61TcI2sT8J64XZqXZ.EmvOXxtCm5LgVV61jHc
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2RV09892LL805104PKPJKSVQ","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:01:37Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"3EG588378T878743P","create_time":"2014-07-25T19:00:38Z","update_time":"2014-07-25T19:01:37Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-2RV09892LL805104PKPJKSVQ","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/3EG588378T878743P","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/3EG588378T878743P/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2RV09892LL805104PKPJKSVQ/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015S.WqXQj8b30KAYN.kq6Vd8m1IIVFy9WgqHeWdSfcEZI
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140631574125879
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=7&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=7&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015BGwZr4-Aph5Yq1Pj555QFXTCyY2JrcIxmNzdPY7.uRA
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140633124127893
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7B087184TL034735VKPJOSYY","create_time":"2014-07-25T23:33:55Z","update_time":"2014-07-25T23:33:55Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-7M746207MU8894518","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015wTOgXlgT9aoO4irnl4l9M0aTzWsu38vkLqL9Gtl889Q
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7B087184TL034735VKPJOSYY","create_time":"2014-07-25T23:33:55Z","update_time":"2014-07-25T23:33:55Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-7M746207MU8894518","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015Jtuga5gGiXha39JPkMgVLwMLK.m-j01ZVg019XjkRdA
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140633132421720
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7B087184TL034735VKPJOSYY","create_time":"2014-07-25T23:33:55Z","update_time":"2014-07-25T23:35:21Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"20892259DL0842646","create_time":"2014-07-25T23:33:55Z","update_time":"2014-07-25T23:35:21Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-7B087184TL034735VKPJOSYY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/20892259DL0842646","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/20892259DL0842646/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7B087184TL034735VKPJOSYY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=8&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=8&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015uiFb9g5Qc-mbV45-fU-dkA4XV9shjWrJmQIb4jM-Syo
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140633287443863
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-13J43573UN774960LKPJO7RA","create_time":"2014-07-26T00:01:08Z","update_time":"2014-07-26T00:01:08Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-13J43573UN774960LKPJO7RA","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-0SK9709268199003G","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-13J43573UN774960LKPJO7RA/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=9&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=9&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015.Z7I5cnqHtvZbclF6R9aX4FSCiLhQqrwEZFeVxHF2Fc
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140633308459405
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-84G226955K534973VKPJPBFQ","create_time":"2014-07-26T00:04:38Z","update_time":"2014-07-26T00:04:38Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-84G226955K534973VKPJPBFQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-7AW31676DW757434R","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-84G226955K534973VKPJPBFQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=10&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=10&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0159xcjQXPjY-P-oIEfFcXeFRNH6wWTdsJaAol1f4dOpm4
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 244014063332381135
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-77D574875R278854FKPJPCLY","create_time":"2014-07-26T00:07:11Z","update_time":"2014-07-26T00:07:11Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-42Y99440GX1230639","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015TCuMUYtVVhRUw00z5fQvwvlBsPRZh3CedcDS.eCZ2sE
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-77D574875R278854FKPJPCLY","create_time":"2014-07-26T00:07:11Z","update_time":"2014-07-26T00:07:11Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-42Y99440GX1230639","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015pvO96-JugdOc0HYgA8leC3Xh8nX8PFaGHAgihfvUcNM
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140633329757655
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-77D574875R278854FKPJPCLY","create_time":"2014-07-26T00:07:11Z","update_time":"2014-07-26T00:08:14Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event.","related_resources":[{"sale":{"id":"51222445689318211","create_time":"2014-07-26T00:07:11Z","update_time":"2014-07-26T00:08:14Z","amount":{"total":"5.99","currency":"USD"},"state":"completed","parent_payment":"PAY-77D574875R278854FKPJPCLY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/51222445689318211","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/51222445689318211/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-77D574875R278854FKPJPCLY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=11&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=11&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015qU5RLauxUF7PWr6QoEIjDqyaFcWYvGdcjdVS.YCDPm0
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140692405810880
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2ML45759X1991801AKPN7KDY","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:14:07Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1EU71412C1889320S","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0159fRZkCooMX9FPysBDJNsokp00IvOIm4Nam-BiBvIbO4
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2ML45759X1991801AKPN7KDY","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:14:07Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1EU71412C1889320S","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015nqKBvxaM.hTnkZYHBmVDLjfewJJOPB52o3fWy6DFwJg
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140692412230504
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2ML45759X1991801AKPN7KDY","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:15:14Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"4F4405965P720774P","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:15:14Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-2ML45759X1991801AKPN7KDY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/4F4405965P720774P","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/4F4405965P720774P/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015dPgQxI2qDu1lnY1m.Fg0ZpDgFb9MWUIMYBCcPzqjDCg
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-2ML45759X1991801AKPN7KDY","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:15:14Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"4F4405965P720774P","create_time":"2014-08-01T20:14:07Z","update_time":"2014-08-01T20:15:14Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-2ML45759X1991801AKPN7KDY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/4F4405965P720774P","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/4F4405965P720774P/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-2ML45759X1991801AKPN7KDY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015ZLrs2V6tzl-qsKvsJ65hcSUEPmkvMg3kZm9nlhJ5uTA
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140692438116257
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=12&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=12&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015ibXzAJDN8t86Bkgx.0zYRCuR-pI0YyFgNL-2kwE8s.A
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140692691646284
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-6BE70278CA2399350KPOAAOA","create_time":"2014-08-01T21:01:44Z","update_time":"2014-08-01T21:01:44Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-6BE70278CA2399350KPOAAOA","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-10X05317VC830673H","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-6BE70278CA2399350KPOAAOA/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=13&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=13&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015sXecBa-u0A178el3txxzDnBGCcdOHVtiQv-IIutMNn4
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699740657189
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-16E37453PH744200TKPORHEQ","create_time":"2014-08-02T16:36:34Z","update_time":"2014-08-02T16:36:34Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-75K78689R9281715N","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015mSYdkW3LEdK9RibrLC3fy8K9-T-JeHuSvAmKHikcj5s
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-16E37453PH744200TKPORHEQ","create_time":"2014-08-02T16:36:34Z","update_time":"2014-08-02T16:36:34Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-75K78689R9281715N","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015OXGXp8.WUV.RTywQGR8APvtDWKRZvbCo-VVhdYffK9E
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699775250596
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-16E37453PH744200TKPORHEQ","create_time":"2014-08-02T16:36:34Z","update_time":"2014-08-02T16:42:22Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"5KP649450C691422R","create_time":"2014-08-02T16:36:34Z","update_time":"2014-08-02T16:42:22Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-16E37453PH744200TKPORHEQ","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/5KP649450C691422R","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/5KP649450C691422R/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-16E37453PH744200TKPORHEQ","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=14&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=14&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015FI9IuYVup7hFONa7Ta682bmsSiIJ06TBjJ8lA8ReVP8
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699816939786
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-3WJ22823NL3133833KPORNDA","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:49:16Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-78239062M0815601K","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015fr-Rv6cKHnZbg8EaBPb7MicLVxZrCHlRZK8FTQL3flI
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-3WJ22823NL3133833KPORNDA","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:49:16Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-78239062M0815601K","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015fabHGhs2YgSO3KIeQYIAod9F74rxLXYj4pt74eiplno
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699822660724
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-3WJ22823NL3133833KPORNDA","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:50:16Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event.","related_resources":[{"sale":{"id":"9V6351666D954223X","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:50:16Z","amount":{"total":"5.99","currency":"USD"},"state":"completed","parent_payment":"PAY-3WJ22823NL3133833KPORNDA","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9V6351666D954223X","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9V6351666D954223X/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0159hGiihxxfpDRg7nBNOmeGf6eAXuu7Vk1XZIfbW0FOnk
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-3WJ22823NL3133833KPORNDA","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:50:16Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event.","related_resources":[{"sale":{"id":"9V6351666D954223X","create_time":"2014-08-02T16:49:16Z","update_time":"2014-08-02T16:50:16Z","amount":{"total":"5.99","currency":"USD"},"state":"completed","parent_payment":"PAY-3WJ22823NL3133833KPORNDA","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9V6351666D954223X","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/9V6351666D954223X/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-3WJ22823NL3133833KPORNDA/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0154x3U72w0i2dOip4PzYUnWMLdRaGbCmQPYEonni9HBa4
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699828823122
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=15&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=15&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"5.99"},"description":"This is the first event."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015PL-no.Ba.MPh.UuJsDHoG-Njmi69efnoTJUeRWpze8k
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699840215529
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-9KE50911X0572862HKPORO5A","create_time":"2014-08-02T16:53:08Z","update_time":"2014-08-02T16:53:08Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-28057421TJ321492X","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015-iv5edQxSSTXdrK7RAjB29Ht7etKVuunekwPCJj5560
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-9KE50911X0572862HKPORO5A","create_time":"2014-08-02T16:53:08Z","update_time":"2014-08-02T16:53:08Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-28057421TJ321492X","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015Q3UxyN-cLcdkzqq8UIlYfg1IgsArZvTLkxWsCBruISw
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699852942089
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-9KE50911X0572862HKPORO5A","create_time":"2014-08-02T16:53:08Z","update_time":"2014-08-02T16:55:19Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"5.99","currency":"USD","details":{"subtotal":"5.99"}},"description":"This is the first event.","related_resources":[{"sale":{"id":"7C6033584M557043A","create_time":"2014-08-02T16:53:08Z","update_time":"2014-08-02T16:55:19Z","amount":{"total":"5.99","currency":"USD"},"state":"completed","parent_payment":"PAY-9KE50911X0572862HKPORO5A","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/7C6033584M557043A","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/7C6033584M557043A/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-9KE50911X0572862HKPORO5A","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=16&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=16&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015aJHAjIdvcl6FtBIC0I.ySoXu-JCtcyKIRXLuC1067GM
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699912046438
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-8A999479152447517KPORUQY","create_time":"2014-08-02T17:05:07Z","update_time":"2014-08-02T17:05:07Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-0N87603817848910G","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015okVJv3yClijibFU97qpR3SEQdG-hrx7Cw.4.9.7evbM
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-8A999479152447517KPORUQY","create_time":"2014-08-02T17:05:07Z","update_time":"2014-08-02T17:05:07Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-0N87603817848910G","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015PlCbHCNc9Ip0HLzhSthY7wTWEn2Coes9ZLuIH3wrpbo
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140699923244414
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-8A999479152447517KPORUQY","create_time":"2014-08-02T17:05:07Z","update_time":"2014-08-02T17:07:05Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"1E951740VJ7464353","create_time":"2014-08-02T17:05:07Z","update_time":"2014-08-02T17:07:05Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-8A999479152447517KPORUQY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/1E951740VJ7464353","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/1E951740VJ7464353/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8A999479152447517KPORUQY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=17&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=17&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"19.99"},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015qn4YL4NISIEdhmM1fTEunh-wFqQi9H7jq3zGyyzeD.I
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140710489221842
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-8DV98449332608425KPPLO5A","create_time":"2014-08-03T22:28:04Z","update_time":"2014-08-03T22:28:04Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8DV98449332608425KPPLO5A","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1PB69212J6064842S","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-8DV98449332608425KPPLO5A/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=18&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=18&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"19.99"},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015R1O8pa2V.zfsxFdoCcbcwkV5uKoMimjXKx4jQRloCfA
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140710501112119
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=19&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=19&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"19.99"},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015xXeLJ2vHiAW0yGGa.tpnbNWjJOtPAIuHz7PIZh7fncQ
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140710506110965
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-05U06045U1772490MKPPLQFY","create_time":"2014-08-03T22:30:47Z","update_time":"2014-08-03T22:30:47Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8PB36004333395928","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015sic-we5v7VvKmKUYZYIaCqrY710StS4-lufe4pZT5Ro
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-05U06045U1772490MKPPLQFY","create_time":"2014-08-03T22:30:47Z","update_time":"2014-08-03T22:30:47Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8PB36004333395928","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A01538ix7gTSFuffFPgoJUFjX8qVXNtlsPK6SGpxpTdNJGM
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140710514119758
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-05U06045U1772490MKPPLQFY","create_time":"2014-08-03T22:30:47Z","update_time":"2014-08-03T22:32:11Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!","related_resources":[{"sale":{"id":"84D19335WE838114S","create_time":"2014-08-03T22:30:47Z","update_time":"2014-08-03T22:32:11Z","amount":{"total":"19.99","currency":"USD"},"state":"completed","parent_payment":"PAY-05U06045U1772490MKPPLQFY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/84D19335WE838114S","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/84D19335WE838114S/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-05U06045U1772490MKPPLQFY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=20&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=20&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"19.99"},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015eeT5tCgY5Igt497wEqEFXgSm4IVGsBpTSuESmcXuu3U
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 244014071689888987
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7NL28073C9281482SKPP3DTY","create_time":"2014-08-04T16:16:15Z","update_time":"2014-08-04T16:16:15Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8WD66659RR2975506","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015XA5v0wMc8-x71w5qR7rt90OAoXBEOXmdUSyeIb6rrpo
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7NL28073C9281482SKPP3DTY","create_time":"2014-08-04T16:16:15Z","update_time":"2014-08-04T16:16:15Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!"}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-8WD66659RR2975506","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015n4IWow2bf7.bn1rN2oz76GMKCcgwma63whKdTYy1GjU
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140716906124091
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-7NL28073C9281482SKPP3DTY","create_time":"2014-08-04T16:16:15Z","update_time":"2014-08-04T16:17:32Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"19.99","currency":"USD","details":{"subtotal":"19.99"}},"description":"Come and listen to Elsa, the magical princess sing songs from the movie Frozen and enjoy play time and refreshments!","related_resources":[{"sale":{"id":"6RN79154T1710160U","create_time":"2014-08-04T16:16:15Z","update_time":"2014-08-04T16:17:32Z","amount":{"total":"19.99","currency":"USD"},"state":"completed","parent_payment":"PAY-7NL28073C9281482SKPP3DTY","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/6RN79154T1710160U","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/6RN79154T1710160U/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-7NL28073C9281482SKPP3DTY","rel":"self","method":"GET"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment
+PayPal\Core\PPHttpConnection: Payload {"redirect_urls":{"return_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=22&success=true","cancel_url":"http:\/\/localhost\/Sandbox\/pay_app\/order\/order_completion.php?orderId=22&success=false"},"intent":"sale","payer":{"payment_method":"paypal"},"transactions":[{"amount":{"currency":"USD","total":"12.99"},"description":"This is the second event! Way better than the first one, but about twice the price."}]}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015vlQGWDyMWRLxNZN943wt9cpFfNVZYt1dxXyHZW5hB5o
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140716961133308
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-5TE87057S75126136KPP3IPQ","create_time":"2014-08-04T16:26:38Z","update_time":"2014-08-04T16:26:38Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"shipping_address":{}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-66C347191P6940246","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ
+PayPal\Core\PPHttpConnection: Payload 
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A015IMoBraVOpspf1102Du-WulcIze2YUHlZc8.WBSKTAmA
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-5TE87057S75126136KPP3IPQ","create_time":"2014-08-04T16:26:38Z","update_time":"2014-08-04T16:26:38Z","state":"created","intent":"sale","payer":{"payment_method":"paypal","status":"UNVERIFIED","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":"Nicholas Rabb"}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price."}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ","rel":"self","method":"GET"},{"href":"https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-66C347191P6940246","rel":"approval_url","method":"REDIRECT"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ/execute","rel":"execute","method":"POST"}]}
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/oauth2/token
+PayPal\Core\PPHttpConnection: Payload grant_type=client_credentials
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Basic QVZKbmNoQi1JenNwV05rY3NpOXE1QkNubC1UMlltT2t1c1VUREEwYUE1QzZwTEZsdldZS1Q4YXAzZUZZOkVBWWNseERjNmRReTA0RFozdEZvQ3dDQzZLVXZBdVhFb2tHaUdqeFBvWms4SktmM3FDQnJvLWRGd3FLTg==
+PayPal\Core\PPHttpConnection: Adding header Accept: */*
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Core\PPHttpConnection: Connecting to https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ/execute
+PayPal\Core\PPHttpConnection: Payload {"payer_id":"TYVB4R8E2QVVC"}
+PayPal\Core\PPHttpConnection: Adding header Content-Type: application/json
+PayPal\Core\PPHttpConnection: Adding header User-Agent: PayPalSDK/rest-sdk-php 0.6.0 (lang=PHP;v=5.5.9;bit=32;os=Windows_NT_6.2;machine=i586;openssl=1.0.1e;curl=7.30.0)
+PayPal\Core\PPHttpConnection: Adding header Authorization: Bearer A0156m9fE9Jp3iGcOmEMQurHXPFV6kpXhsALVJMddJOLg0M
+PayPal\Core\PPHttpConnection: Adding header PayPal-Request-Id: 2440140716968022789
+PayPal\Core\PPHttpConnection: Invalid or no certificate authority found - Retrying using bundled CA certs file
+PayPal\Transport\PPRestCall: {"id":"PAY-5TE87057S75126136KPP3IPQ","create_time":"2014-08-04T16:26:38Z","update_time":"2014-08-04T16:27:50Z","state":"approved","intent":"sale","payer":{"payment_method":"paypal","payer_info":{"email":"nrabb@outlook.com","first_name":"Nicholas","last_name":"Rabb","payer_id":"TYVB4R8E2QVVC","shipping_address":{"line1":"34 Tannon Drive North","line2":"","city":"Fairport","state":"NY","postal_code":"14450","country_code":"US","recipient_name":""}}},"transactions":[{"amount":{"total":"12.99","currency":"USD","details":{"subtotal":"12.99"}},"description":"This is the second event! Way better than the first one, but about twice the price.","related_resources":[{"sale":{"id":"1J469038KR244131E","create_time":"2014-08-04T16:26:38Z","update_time":"2014-08-04T16:27:50Z","amount":{"total":"12.99","currency":"USD"},"state":"completed","parent_payment":"PAY-5TE87057S75126136KPP3IPQ","links":[{"href":"https://api.sandbox.paypal.com/v1/payments/sale/1J469038KR244131E","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/payments/sale/1J469038KR244131E/refund","rel":"refund","method":"POST"},{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ","rel":"parent_payment","method":"GET"}]}}]}],"links":[{"href":"https://api.sandbox.paypal.com/v1/payments/payment/PAY-5TE87057S75126136KPP3IPQ","rel":"self","method":"GET"}]}

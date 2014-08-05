@@ -3,274 +3,158 @@
 <head>
 
 	<?php
-		require_once('google-api-php-client/src/Google_Client.php');
-		require_once('google-api-php-client/src/contrib/Google_CalendarService.php');
 
-		if($_SERVER['REQUEST_METHOD'] != "POST"){
-			session_start();			
-			$client_id = '443906651386-s9o3bt0qid9vkcdjupuhg2e0l5iqket0.apps.googleusercontent.com';
-			$client_secret = 'QAM6rn7wfPf5cBBoNz5K9iCa';
-			$redirect_uri = 'http://localhost/Sandbox';
+		require_once 'bootstrap.php';
+		session_start();
 
-			$client = new Google_Client();
-			$client->setClientId($client_id);
-			$client->setClientSecret($client_secret);
-			$client->setRedirectUri($redirect_uri);
-			$client->setScopes("https://www.googleapis.com/auth/calendar");
+		$next = true;
+		$back = false;
+		$finish = false;
+		$cancel = false;
 
-			if(isset($_GET['logout'])){
-				unset($_SESSION['access_token']);
+		if(isset($_SESSION['process_step']) && $_SESSION['process_step'] != 'login'){
+			if($_SESSION['process_step'] == 'schedule_apt'){
+				header("Location: /Sandbox/schedule.php?method=update");
 			}
-
-			if(isset($_GET['code'])){
-				$client->authenticate($_GET['code']);
-				$_SESSION['access_token'] = $client->getAccessToken();
-				$redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-				header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
+			else if($_SESSION['process_step'] == 'payment'){			
+				header("Location: /Sandbox/payment.php");
 			}
-
-			if(isset($_SESSION['access_token']) && $_SESSION['access_token']){
-				$client->setAccessToken($_SESSION['access_token']);
-			}		
-			else{
-				$authUrl = $client->createAuthUrl();
-				//print("<a class='login' href='$authURL'>Connect Me!</a>");
-			}
-
-			if($client->getAccessToken()){			
-				//print "<h1>Calendar List</h1><pre>" . print_r($calList, true) . "</pre>";
-				$_SESSION['access_token'] = $client->getAccessToken();
-			}			
 		}
 		else{
-			session_start();
-			$client = new Google_Client();
-			$client->setAccessToken($_SESSION['access_token']);
-			$client->setApplicationName("Google Calendar PHP Starter Application");
-
-			// Visit https://code.google.com/apis/console?api=calendar to generate your
-			// client id, client secret, and to register your redirect uri.
-			$client->setClientId('14798831816-798jk1fcv8qjfhbq9ci844fdsckj0euv.apps.googleusercontent.com');
-			$client->setClientSecret('w9271HiaQnHLx99nRyU_QMqU');
-			$client->setRedirectUri('http://localhost/Sandbox');
-
-			$cal = new Google_CalendarService($client);
-
-			$title = $date = $startTimeHour = $startTimeMinute = $endTimeHour = $endTimeMinute = $attendants = '';
-
-			$title = $_POST['title'];
-			$location = $_POST['location'];
-			$startDate = $_POST['startDate'];
-			$endDate = $_POST['endDate'];
-			$startTimeHour = $_POST['startTimeHour'];
-			$startTimeMinute = $_POST['startTimeMinute'];
-			$startTimeAMPM = $_POST['startTimeAMPM'];
-			$endTimeHour = $_POST['endTimeHour'];
-			$endTimeMinute = $_POST['endTimeMinute'];
-			$endTimeAMPM = $_POST['endTimeAMPM'];
-			$attendants = array();
-
-			foreach($_POST as $key=>$val){
-				if(strstr($key, 'attendant')){
-					$attendants[] = $val;
-				}
-			}
-
-			$event = new Google_Event();
-			$event->setSummary($title);
-			$event->setLocation($location);
-
-			date_default_timezone_set("America/New_York");
-
-			$startDateSplit = explode("/", $startDate);
-			$startDateTime = new DateTime();
-			$startDateTime->setDate(intval($startDateSplit[2]), intval($startDateSplit[0]), intval($startDateSplit[1]));		
-
-			if($startTimeAMPM == "AM"){
-				$startDateTime->setTime(intval($startTimeHour), intval($startTimeMinute));
-			}
-			else{
-				$startDateTime->setTime(intval($startTimeHour)+12, intval($startTimeMinute));
-			}
-
-			$start = new Google_EventDateTime();
-			$start->setTimeZone('America/New_York');
-			$start->setDateTime($startDateTime->format(DateTime::RFC3339));
-
-			$event->setStart($start);
-			
-			$endDateSplit = explode("/",$endDate);
-			$endDateTime = new DateTime();
-			$endDateTime->setDate(intval($endDateSplit[2]), intval($endDateSplit[0]), intval($endDateSplit[1]));
-			
-			if($endTimeAMPM == "AM"){
-				$endDateTime->setTime(intval($endTimeHour), intval($endTimeMinute));
-			}
-			else{
-				$endDateTime->setTime(intval($endTimeHour)+12, intval($endTimeMinute));
-			}
-
-			$end = new Google_EventDateTime();
-			$end->setTimeZone('America/New_York');
-			$end->setDateTime($endDateTime->format(DateTime::RFC3339));
-
-			$event->setEnd($end);
-
-			$attendees = array();
-			foreach($attendants as $attendant){
-				$attendee = new Google_EventAttendee();
-				$attendee->setEmail($attendant);
-				$attendees[] = $attendee;
-			}
-
-			$event->attendees = $attendees;
-			$finalEvent = $cal->events->insert('primary', $event);
-			$success = true;
+			unset($_SESSION['logged_in']);
+			unset($_SESSION['user_id']);
+			unset($_SESSION['appt_id']);
+			$_SESSION['process_step'] = 'login';
 		}
+		
 	?>
 
 	<title>Schedule an Appointment</title>
 
-	<link href="./css/metro-bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="./css/site.css" rel="stylesheet" type="text/css" />
+	<script>
 
-<script>
-	function addAttendant(){
-		var div = document.getElementById("attendants");
-		var count = 0;
-		for(var i = 0; i < div.children.length; i++){
-			var child = div.children[i];
-			if(child.id.indexOf('attendant') > -1){
-				count++;
-			}
+		window.onload = function(){
+			updateHeader("login");
+
+			$("#ftr_next")[0].setAttribute("onclick", "validateLogin();");
+			$("#ftr_next").onclick = function(){
+				validateLogin();
+			}			
 		}
-		count++;
-		var newInput = document.createElement("input");
-		newInput.id = 'attendant' + count;
-		newInput.name = 'attendant' + count;
-		newInput.type = "text";
-		div.appendChild(document.createElement("br"));
-		div.appendChild(newInput);
-	}
-</script>
-
-<style>
-
-	body{
-		padding: 20px;
-	}
-
-</style>
+	</script>
 
 </head>
 
 <body>
+	<?php require_once('header.php'); ?>
 
-	<?php if (isset($authUrl)): ?>
+	<div id="loaderDiv">
+		<img src="./img/loader.gif" alt="Loading..."/>
+		<h4>Please wait...</h4>
+	</div>
 
-	<h1>You must first log in before you can schedule an appointment!</h1>
-	<a href='<?php echo $authUrl; ?>'>Connect Me!</a>
-
-	<?php else: if($_SERVER['REQUEST_METHOD'] != 'POST'): ?>
-	
-	<!--<a class='logout' href='?logout'>Logout</a>	-->
-	<h1 id="apt_title">Schedule an Appointment</h1>
-
-	<form action="index.php" method="POST" name="scheduler">
-		<div class="container-fluid">
+	<div id="createAccountModal" class="modal hide fade" tabindex="-1" aria-labelledby="createAccountModalLabel"
+		aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 id="createAccountModalLabel">Create An Account</h3>
+		</div>
+		<div class="modal-body">
 			<div class="row">
-				<div class="span3 offset1">
-					<p>Title:</p>
-					<input type="text" name="title"/>
-
-					<p>Location:</p>
-					<input type="text" name="location" />
+				<div class="span3">
+					<label for="createActUsername">Email Address</label>
 				</div>
-				<div class="span3 offset1">
-					<p>Start Date (mm/dd/yyyy):</p>
-					<input type="text" name="startDate" />
-
-					<p>Start Time:</p>
-					<select name="startTimeHour" style="width:70px;">
-						<option>01</option>
-						<option>02</option>
-						<option>03</option>
-						<option>04</option>
-						<option>05</option>
-						<option>06</option>
-						<option>07</option>
-						<option>08</option>
-						<option>09</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-					</select>
-					<select name="startTimeMinute" style="width:70px;">
-						<option>00</option>
-						<option>15</option>
-						<option>30</option>
-						<option>45</option>
-					</select>
-					<select name="startTimeAMPM" style="width:70px;">
-						<option>AM</option>
-						<option>PM</option>
-					</select>
-
-					<p>End Date (mm/dd/yyyy):</p>
-					<input type="text" name="endDate" />
-
-					<p>End Time:</p>
-					<select name="endTimeHour" style="width:70px;">
-						<option>01</option>
-						<option>02</option>
-						<option>03</option>
-						<option>04</option>
-						<option>05</option>
-						<option>06</option>
-						<option>07</option>
-						<option>08</option>
-						<option>09</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-					</select>
-					<select name="endTimeMinute" style="width:70px;">
-						<option>00</option>
-						<option>15</option>
-						<option>30</option>
-						<option>45</option>
-					</select>
-					<select name="endTimeAMPM" style="width:70px;">
-						<option>AM</option>
-						<option>PM</option>
-					</select>
+				<input id="createActUsername"type="text" placeholder="example@email.com"
+					onblur="validateCreateActUsername();"/>
+				<span id="createActUsernameValidate" class="error">Invalid email address</span><br />
 			</div>
-			<div class="span3 offset1">
-				<p>Attendants (email address):</p>
-				<div id="attendants">
-					<input type="text" name="attendant1" id="attendant1"/>
+
+			<div class="row">
+				<div class="span3">
+					<label for="createActUsername">Password</label>
 				</div>
-				<br />
-				<input type="button" class="btn btn-info" onclick="addAttendant()" value="Add Attendant"/>
+				<input id="createActPwd" type="password" /><br />
+			</div>
+
+			<div class="row">
+				<div class="span3">
+					<label for="createActUsername">Confirm Password</label>
+				</div>
+				<input id="createActPwdConfirm" type="password" onblur="validateCreateActPassMatch();"/><br />
+				<span id="createActPwdValidate" class="error">Passwords don't match</span>
 			</div>
 		</div>
-		<hr />
-		<br />
+		<div class="modal-footer">		
+			<input type="button" class="btn btn-info" value="Create Account" onclick="createAccount();"/>
+		</div>
+	</div>
+
+	<div id="guestEmailModal" class="modal hide fade" tabindex="-1" aria-labelledby="guestEmailModalLabel"
+		aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 id="guestEmailModalLabel">Use a Guest Account</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row">
+				<div class="span7">
+					<p>Please enter your email address, just so we can send you some confirmation emails
+					 once you complete your order!</p>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="span4">
+					<input id="guestEmail"type="text" placeholder="example@email.com"
+					onblur="validateGuestEmail();"/>
+					<span id="guestEmailValidate" class="error">Invalid email address</span><br />			
+				</div>
+			</div>		
+		</div>
+		<div class="modal-footer">		
+			<input type="button" class="btn btn-info" value="Continue" onclick="submitGuestEmail();"/>			
+		</div>
+	</div>
+
+	<div class="container-fluid">
 		<div class="row">
-			<div class="span1 offset11">
-				<input id="btn_submit" type="submit" class="btn btn-primary" value="Submit" />
+			<div class="offset1">
+				<h3>Please Log In to Start Planning your Party!</h3>
+				<hr />
+			</div>			
+		</div>
+
+		<div class="row" id="validateText" style="display: none;">
+			<div class="offset2">
+				<p class="error">Invalid username/password. Please try again.</p>
 			</div>
 		</div>
-	</form>
 
-	<?php endif; endif;
-		if(isset($success) && $success):?>
+		<div class="row">
+			<div class="offset2">				
+				<input type="text" id="username" placeholder="Email Address..." />
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset2">
+				<input type="password" id="password" />
+			</div>
+		</div>		
+		<div class="row">
+			<div class="offset2">				
+				<br /><a href="#createAccountModal" data-toggle="modal">Create an account</a>
+			</div>
+		</div>
+		<div class="row">
+			<br /><br />
+			<div class="offset2 span10 alert">				
+				<p>You can continue without logging in, but you will be missing out on some features
+					such as saving credit card information and order history.</p>
+				<a href="#guestEmailModal" data-toggle="modal">Continue without logging in?</a>
+			</div>
+		</div>
+	</div>
 
-	<?php echo ("<h1 id='success_label'>Created event: " . $finalEvent['id'] . "</h1>"); ?>
-	
-	<input type="button" class="btn btn-primary" value="Back to Sandbox" />		
-
-	<?php endif; ?>
+	<?php require_once('footer.php'); ?>
 </body>
 
 </html>

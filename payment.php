@@ -2,253 +2,153 @@
 <html>
 
 <head>
-	<title>Schedule an Appointment | Payment</title>
+	<?php
 
-	<link href="./css/metro-bootstrap.css" rel="stylesheet" type="text/css" />
+		//require_once 'bootstrap.php';
+		session_start();
+
+		if(isset($_SESSION['logged_in']) && 
+			($_SESSION['process_step'] == 'schedule_apt' || $_SESSION['process_step'] == 'payment')){
+			
+			$_SESSION['process_step'] = 'payment';
+			setcookie("process_step", "payment");
+
+			$back = true;
+			$next = true;
+			$finish = true;
+			$cancel = true;
+		}
+		else if(!isset($_SESSION['logged_in'])){
+			header("Location: " . __DIR__ . "/index.php");
+		}
+		else{
+			echo 'Came from wrong step!';
+		}
+
+	?>
+	<title>Schedule an Appointment | Payment</title>
 
 	<script>
 
 		window.onload = function(){
-			//Read in event info
-
+			updateHeader("payment");
+			switchPayButton("next");
 		};
 
-		function eventSelect(sender){
-			var partyName = "", partyInfo = "", price = 0;
-			if(sender.selectedIndex > 0){
-				clearInfo();
-				switch(sender.value){
-					case("Party 1"):
-						partyName = "Party 1";
-						partyInfo = "Fun party! The first party!";
-						price = 25.99;
-						break;
-					case("Party 2"):
-						partyName = "Party 2";
-						partyInfo = "Another fun party! But the second one!";
-						price = 35.99;
-						break;
-					case("Party 3"):
-						partyName = "Party 3";
-						partyInfo = "The third one! This one is okay.";
-						price = 15.99;
-						break;
-					default:
-						break;
-				}
-
-				var info = document.getElementById("info");
-				var partyNameP = document.createElement("p");
-				partyNameP.appendChild(document.createTextNode(partyName));
-				info.appendChild(partyNameP);
-
-				var partyInfoP = document.createElement("p");
-				partyInfoP.appendChild(document.createTextNode(partyInfo));
-				info.appendChild(partyInfoP);
-
-				var priceP = document.createElement("p");
-				priceP.appendChild(document.createTextNode("$" + price));
-				info.appendChild(priceP);
-			}
-		}
-
-		function clearInfo(){
-			var info = document.getElementById("info");
-			while(info.lastChild != null){
-				info.removeChild(info.lastChild);
-			}
-		}
-
+		
 	</script>
-
-	<style>
-
-		body{
-			padding: 20px;
-		}
-
-		#eventSelect,#info{
-			display: inline-block;
-			width: 250px;
-			vertical-align: top;
-		}
-
-		#info{
-			margin-left: 50px;
-		}
-
-		.oneCol{
-			width: 250px;
-			display: inline-block;
-			margin-right: 50px;
-			vertical-align: top;
-		}
-
-	</style>
 </head>
 
-<?php
-	
-	if($_SERVER['REQUEST_METHOD'] == 'POST'){
-
-		$name = $address = $city = $state = $zip = $cardNumber = $cardType = $cardExpMonth = "";
-		$cardExpYear = $cardCVV = $cardFirst = $cardLast = $billingAddr = $subTotal = $tax = $total = "";
-
-		$name = $_POST['name'];
-		$address = $_POST['address'];
-		$city = $_POST['city'];
-		$state = $_POST['state'];
-		$zip = $_POST['zip'];
-		$cardNumber = $_POST['cardNumber'];
-		$cardType = $_POST['cardType'];
-		$cardExpMonth = $_POST['cardExpMonth'];
-		$cardExpYear = $_POST['cardExpYear'];
-		$cardCVV = $_POST['cardCVV'];
-		$cardFirst = $_POST['cardFirst'];
-		$cardLast = $_POST['cardLast'];
-		$billingAddr = $_POST['billingAddr'];
-		$subTotal = $_POST['subTotal'];
-
-		$client_id = 'AVJnchB-IzspWNkcsi9q5BCnl-T2YmOkusUTDA0aA5C6pLFlvWYKT8ap3eFY';
-		$client_secret = 'EAYclxDc6dQy04DZ3tFoCwCC6KUvAuXEokGiGjxPoZk8JKf3qCBro-dFwqKN';
-
-		$common_base_url = 'sdk-core-php-master/sdk-core-php-master/lib';
-
-		echo $common_base_url;
-		
-		include($common_base_url . '/common/PPApiContext.php');
-		require_once("rest-api-sdk-php-master/lib/PayPal/rest/ApiContext.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Address.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Payment.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/CreditCard.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/FundingInstrument.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Payer.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/AmountDetails.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Amount.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Transaction.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/PaymentExecution.php");
-		require_once("rest-api-sdk-php-master/lib/PayPal/Api/Links.php");
-
-		$oauthCredential = new OAuthTokenCredential($client_id, $client_secret);
-		$accessToken = $oauthCredential->getAccessToken(array('mode' => 'sandbox'));
-
-		$apiContext = new ApiContext($oauthCredential);
-
-		$addr = new Address();
-		$addr->setLine1($address);
-		$addr->setCity($city);
-		$addr->setCountry_code('US');
-		$addr->setPostal_code($zip);
-		$addr->setState($state);
-
-		$card = new CreditCard();
-		$card->setNumber($cardNumber);
-		$card->setType($cardType);
-		$card->setExpire_month($cardExpMonth);
-		$card->setExpire_year($cardExpYear);
-		$card->setCvv2($cardCVV);
-		$card->setFirst_name($cardFirst);
-		$card->setLast_name($cardLast);
-		$card->setBilling_address($billingAddr);
-
-		$fi = new FundingInstrument();
-		$fi->setCredit_card($card);
-
-		$payer = new Payer();
-		$payer->setPayment_method('credit_card');
-		$payer->setFunding_instruments(array($fi));
-
-		$amountDetails = new AmountDetails();
-		$amountDetails->setSubtotal($subTotal);
-		$amountDetails->setTax('0.00');
-		$amountDetails->setShipping('0.00');
-
-		$amount = new Amount();
-		$amount->setCurrency('USD');
-		$amount->setTotal($subTotal);
-		$amount->setDetails($amountDetails);
-
-		$transaction = new Transaction();
-		$transaction->setAmount($amount);
-		$transaction->setDescription('This is the payment transaction description.');
-
-		$payment = new Payment();
-		$payment->setIntent('sale');
-		$payment->setPayer($payer);
-		$payment->setTransactions(array($transaction));
-		$payment->setRedirectUrls(array('http://localhost/paymentExecution.php'));
-
-		$response = $payment->create($apiContext);
-
-		foreach($response->links as $link){
-			if($link->getRel() == 'approval_url'){
-				header("Location: $link->getHref()");
-			}
-		}
-	}
-	/*else{
-		require_once("rest-api-sdk-php-master/lib/PayPal/Auth/OAuthTokenCredential.php");
-		$oauthCredential = new OAuthTokenCredential($client_id, $client_secret);
-		$accessToken = $oauthCredential->getAccessToken(array('mode' => 'sandbox'));
-	}*/
-?>
-
 <body>
+	<?php require_once('header.php'); ?>
+	<?php require_once('cancelModal.php') ?>
 
-	<h1>Payment</h1>
-
-	<select id="eventSelect" onchange="eventSelect(this);">
-		<option>Please select an option...</option>
-		<option>Party 1</option>
-		<option>Party 2</option>
-		<option>Party 3</option>
-		<option>Party 4</option>
-	</select>
-
-	<div id="info">
-		<p>Please select an event to see information!</p>
+	<div id="loaderDiv">
+		<img src="./img/loader.gif" alt="Loading..."/>
+		<h4>Please wait...</h4>
 	</div>
 
-	<hr />
+	<div class="container-fluid">
+		<div class="row">
+			<div class="offset1">
+				<h3>Select your Payment Type</h3>
+				<hr />
+			</div>
+		</div>
 
-	<h3>Payment Information</h3>
-	<form method="post" name="payForm" id="payForm">
-		<div class="oneCol">
-			<h4>Name on Card</h4>
-			<input type="text" name="name" />
-			<h4>Address</h4>
-			<input type="text" name="address" />
-			<h4>City</h4>
-			<input type="text" name="city" />
-			<h4>State</h4>
-			<select name="state">
-				<option>NY</option>
-			</select>
-			<h4>Zip Code</h4>
-			<input type="text" name="zip" />
-			<h4>Country</h4>
-			<select name="country">
-				<option>USA</option>
-			</select>
+		<div class="row">
+			<div class="offset1">
+				<select id="select_pay_type" onchange="showHideCredit(this);">
+					<option>PayPal</option>
+					<!--<option>Credit Card</option>-->
+				</select>
+			</div>
 		</div>
-		<div class="oneCol">
-			<h4>Card Number</h4>
-			<input type="text" name="cardNumber" />
-			<h4>Expiration Month</h4>
-			<select name="expMonth">
-				<option>Jan</option>
-			</select>
-			<h4>Expiration Year</h4>
-			<select name="expYear">
-				<option>2014</option>
-			</select>		
-			<h4>CVV2</h4>
-			<input type="text" name="cvv2" maxlength="3"/>
+
+		<div id="creditForm">
+			<div class="row title">
+				<div class="offset1">
+					<h3>Credit Card Information</h3>
+					<hr />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="offset1 span3">
+					<label for="creditName">Name on Card</label>
+				</div>
+				<div class="offset1 span3">
+					<input type="text" id="creditName"/>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="offset1 span3">
+					<label for="cardNumber">Card Number</label>
+				</div>
+				<div class="offset1 span3">
+					<input type="text" id="cardNumber" />
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="offset1 span3">
+					<label for="expMonth">Expiration</label>
+				</div>
+				<div class="offset1 span1">
+					<select id="expMonth" style="width: 70px;">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+						<option>06</option>
+						<option>07</option>
+						<option>08</option>
+						<option>09</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+				</div>
+				<div class="span2">
+					<select id="expYear" style="width: 100px; margin-left: 20px;"><!-- TODO: Set automatic filling of years -->
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option>
+						<option>2021</option>
+						<option>2022</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="offset1 span3">
+					<label for="cvvNum">CVV2</label>
+				</div>
+				<div class="offset1 span1">
+					<input type="text" name="cvv2" maxlength="3"/>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="offset1 span1">
+					<input type="button" class="btn btn-primary"
+						value="Save Credit Card" onclick="saveCreditCard();"/>
+				</div>
+				<div class="offset3 span6">
+					<p class="success" id="card_saved_success">Credit Card Saved!</p>
+					<p class="error" id="card_saved_error">Error saving Credit Card. Please try again.</p>
+				</div>
+			</div>
 		</div>
-		<div>
-			<input type="submit" class="btn-primary" value="Submit" />
-		</div>
-	</form>
+	</div>
+
+	<?php require_once('footer.php'); ?>
 
 </body>
 

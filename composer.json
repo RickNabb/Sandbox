@@ -1,0 +1,21 @@
+{
+    "name": "paypal/rest-api-sandbox-app",
+    "description": "Sandbox Playground Transaction App",
+    "homepage": "https://github.com/RickNabb/Sandbox",
+    "authors": [
+        {
+            "name": "Nick Rabb",
+            "homepage": "https://github.com/RickNabb/"
+        }
+    ],
+    "config": {
+        "require-all": true
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mysql": "*",
+        "paypal/rest-api-sdk-php": "0.7.*"
+    }
+}

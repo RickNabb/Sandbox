@@ -1,6 +1,24 @@
+body{
+	padding: 0;
+}
+
+label{
+	font-size: 18px;
+	display: inline-block;
+}
+
+label{
+	padding: 10px 0 10px 0;
+}
+
+hr{
+	padding: 10px 0 10px 0;
+}
+
 #success_label{
 	text-align: center;
 	margin-top: 50%;
+	color: green;
 }
 
 #apt_title{
@@ -12,6 +30,130 @@
 	width: 100px;
 }
 
-input{
-	font-size: 40px;
+#attendants{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+select[id*="Date"]{
+	display: inline-block;
+	width: 80px;
+}
+
+select[id*="DateMonth"]{
+	width: 120px;
+}
+
+.ctrText{
+	text-align: center;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}
+
+i[class*="icon"]{
+	margin-top: 4px;
+}
+
+@media (max-width: 768px) and (min-width: 200px){
+	.container,.container-fluid{
+		padding-left: 10%;
+	}
+
+	div[class*='offset']{
+		margin-left: 0
+	}
+}
+
+.title{
+	margin-top: 120px;
+}
+
+#card_saved_success,#card_saved_error,#creditForm,span[id*='Validate'][class*='error']{
+	display: none;
+}
+
+#hdr_container div h4, #hdr_container div{
+	-webkit-transition: color 0.5s ease-in, border 0.5s ease-in;
+	transition: color 0.5s ease-in, border 0.5s ease-in;
+	-moz-transition: color 0.5s ease-in, border 0.5s ease-in;
+}
+
+.eventItem{
+	border: 2px solid #60a0ff;
+	border-radius: 10px;
+	padding: 5px;
+	-webkit-transition: border 0.15s ease-in;
+	transition: border 0.15s ease-in;
+	-moz-transition: border 0.15s ease-in;
+}
+
+.eventPrice{
+	font-size: 30px;
+	color: green;
+}
+
+.eventDesc{
+	font-size: 18px;
+}
+
+.eventSelected{
+	border: 4px solid #0B6DFF;
+}
+
+.eventHover:hover{
+	cursor: pointer;
+	border: 2px solid #AFCFFF;
+}
+
+#local_storage_alert{
+	display: none;
+}
+
+#loaderDiv{
+	display: none;
+
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.4;
+	z-index: 100;
+	top: 0;
+}
+
+#loaderDiv h4{
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#loaderDiv img{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	display: block;
+}
+
+/*.table-striped tbody > tr:nth-child(odd) > td:hover, .table-striped tbody > tr:nth-child(odd) > th:hover,
+.hoverRow:hover{
+	background-color: #fcf8e3;
+	cursor: pointer;
+}*/
+
+#createEventTitle{	
+	color: #2e8bcc;
+}
+#createEventTitle:hover{
+	cursor: pointer;
+	color: #20608e;
+}
+
+#eventSignupTitle{
+	font-weight: bold;
 }

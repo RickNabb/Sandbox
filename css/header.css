@@ -1,0 +1,20 @@
+#hdr_container{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 150px;
+}
+
+.step{
+	border-bottom: 1px solid #ccc;
+	color: #ccc;
+	height: 35px;
+	margin-left: -1px;
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+}
+
+.current{
+	border-bottom: 2px solid #60a0ff;
+	color: #1B76FF;
+}
